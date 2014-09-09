@@ -1,68 +1,135 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="WebGoat : ">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>WebGoat</title>
-  </head>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Fonts from Font Awsome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Vector Map  -->
+    <link rel="stylesheet" href="assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css">
+    <!-- ToDos  -->
+    <link rel="stylesheet" href="assets/plugins/todo/css/todos.css">
+    <!-- Morris  -->
+    <link rel="stylesheet" href="assets/plugins/morris/css/morris.css">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Feature detection -->
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/WebGoat/WebGoat">View on GitHub</a>
-
-          <h1 id="project_title">Webgoat</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/WebGoat/WebGoat/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/WebGoat/WebGoat/tarball/master">Download this project as a tar.gz file</a>
-            </section>
+<body class="animated fadeIn">
+    <section id="container">
+        <header id="header">
+            <!--logo start-->
+            <div class="brand">
+                <a href="index.html" class="logo"><span>Web</span>Goat</a>
+            </div>
+            <!--logo end--> 
+            <div class="toggle-navigation toggle-left" style="margin-top:20px;">
+                <a href="" class="btn btn-primary" role="button" target="_blank">Download tar.gz</a>
+            	<a href="" class="btn btn-primary" role="button" target="_blank">Download .zip</a>
+            </div><!--toggle navigation end-->           
         </header>
-    </div>
+        <!--sidebar left start-->
+        <aside class="sidebar">
+            <div id="leftside-navigation" class="nano">
+            	<ul class="nano-content">
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><span>Project Links</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project" target="_blank">OWASP - WebGoat Project Link</a></li>
+                            <li><a href="https://github.com/WebGoat/WebGoat" target="_blank">GitHub Project Page</a></li>
+                            <li><a href="https://webgoat.atlassian.net/" target="_blank">JIRA</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);" target="_blank"><span>Documentation</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="https://github.com/WebGoat/WebGoat/wiki/Webgoat-Installation" target="_blank">How to Download & Run WebGoat</a></li>
+                            <li><a href="https://github.com/WebGoat/WebGoat/wiki" target="_blank">Wiki for GitHub</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><span>Builds</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="https://webgoat.atlassian.net/builds/artifact/WEB-WGM/JOB1/build-latestSuccessful/WebGoat-War/target/WebGoat-6.0-SNAPSHOT.war" target="_blank">WebGoat 5.4 (Stable)</a></li>
+                        </ul>
+                    </li>
+            	</ul>
+            </div>
+        </aside>
+        <!--sidebar left end-->
+        <!--main content start-->
+        <section class="main-content-wrapper">
+            <section id="main-content">
+            	<div class="row">
+            		<div class="col-md-8">
+            			<div class="col-md-12">
+               				<div class="panel">
+                            	<div class="panel-body">
+               						<h1>Ever met a myotonic goat?</h1>
+               						<hr />
+               						<p>Perhaps not, but you’ve likely heard of <strong>fainting goats</strong>. That is, goats believed to possess a specific genetic disorder, a problem in their code if you will.</p>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>
-<a name="ever-met-a-myotonic-goat" class="anchor" href="#ever-met-a-myotonic-goat"><span class="octicon octicon-link"></span></a>Ever met a myotonic goat?</h2>
+               						<p>When these particular goats are startled, a rotten bit code in their DNA causes them to instinctively stiffen their legs. This leads to them falling over near instantly, or at the very least, carrying on a <strong>stiff-legged shuffle</strong> around the farm.</p>
 
-<p>Perhaps not, but you’ve likely heard of <strong>fainting goats</strong>. That is, goats believed to possess a specific genetic disorder, a problem in their code if you will. </p>
+               						<p>In a mix of both sadness and intense laughter, watching a goat nearly, though quite literally, be scared to death can be enlightening. Interestingly enough, it turns out this laughing stock of the barnyard is also a great metaphor for applications with their own <strong>bad code</strong>. While scientists continue to study just what’s going wrong in a myotonic goat’s code, you can now do the same, metaphorically speaking of course.</p>
+									
+               						<h2>Meet Hack, the WebGoat!</h2>
+									<hr />
+               						<p>A deliberately insecure application that allows interested developers just like you to <strong>test vulnerabilities</strong> commonly found in Java-based applications that use common and popular open source components.</p>
 
-<p>When these particular goats are startled, a rotten bit code in their DNA causes them to instinctively stiffen their legs. This leads to them falling over near instantly, or at the very least, carrying on a <strong>stiff-legged shuffle</strong> around the farm. </p>
+               						<p>Now, while we in no way condone causing intentional harm to any animal, goat or otherwise, we think learning everything you can about security vulnerabilities is essential to understanding just what happens when even a small bit of <strong>unintended code gets into your applications</strong>.</p>
 
-<p>In a mix of both sadness and intense laughter, watching a goat nearly, though quite literally, be scared to death can be enlightening. Interestingly enough, it turns out this laughing stock of the barnyard is also a great metaphor for applications with their own <strong>bad code</strong>. While scientists continue to study just what’s going wrong in a myotonic goat’s code, you can now do the same, metaphorically speaking of course.</p>
+               						<p>What better way to do that than with <strong>your very own scapegoat</strong>?</p>
 
-<p><strong>Meet Hack, the WebGoat!</strong> </p>
+               						<p>Feel free to do what you will with Hack. Poke, prod and if it makes you feel better, scare him until your heart’s content. <strong>Go ahead, and Hack the goat</strong>. We promise he likes it.</p>
 
-<p>A deliberately insecure application that allows interested developers just like you to <strong>test vulnerabilities</strong> commonly found in Java-based applications that use common and popular open source components. </p>
+               						<p>The WebGoat Team</p>
+               						<hr />
+               						<p>WebGoat maintained by <a href="https://github.com/WebGoat" target="_blank">WebGoat</a></p>
+               					</div>
+               				</div>
+               			</div>
+               		</div><!--col-md-8 end-->
+            		<div class="col-md-4">
+            			
+            		</div><!--col-md-4 end-->              		
+				</div>
+            </section>
+        </section>
+        <!--main content end-->
+        
+    </section>
+    <!--Global JS-->
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/waypoints/waypoints.min.js"></script>
+    <script src="assets/js/application.js"></script>
 
-<p>Now, while we in no way condone causing intentional harm to any animal, goat or otherwise, we think learning everything you can about security vulnerabilities is essential to understanding just what happens when even a small bit of <strong>unintended code gets into your applications</strong>.</p>
+</body>
 
-<p>What better way to do that than with <strong>your very own scapegoat</strong>?</p>
-
-<p>Feel free to do what you will with Hack. Poke, prod and if it makes you feel better, scare him until your heart’s content. <strong>Go ahead, and Hack the goat</strong>. We promise he likes it.</p>
-
-<p><em>The Webgoat Team</em></p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">WebGoat maintained by <a href="https://github.com/WebGoat">WebGoat</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
 </html>
